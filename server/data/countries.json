@@ -152,6 +152,14 @@
       "media_influence": 25,
       "sports_power": 20,
       "education_appeal": 35
+    },
+    "infrastructure": {
+      "railways": 50000,
+      "highways": 100000,
+      "ports": 10,
+      "airports": 50,
+      "pipelines": 20000,
+      "electricity_grid": 80
     }
   },
   {
@@ -307,6 +315,14 @@
       "media_influence": 90,
       "sports_power": 75,
       "education_appeal": 95
+    },
+    "infrastructure": {
+      "railways": 150000,
+      "highways": 300000,
+      "ports": 30,
+      "airports": 150,
+      "pipelines": 50000,
+      "electricity_grid": 95
     }
   },
   {
@@ -462,6 +478,14 @@
       "media_influence": 50,
       "sports_power": 45,
       "education_appeal": 70
+    },
+    "infrastructure": {
+      "railways": 120000,
+      "highways": 450000,
+      "ports": 25,
+      "airports": 80,
+      "pipelines": 30000,
+      "electricity_grid": 85
     }
   },
   {
@@ -575,6 +599,14 @@
       "media_influence": 65,
       "sports_power": 60,
       "education_appeal": 80
+    },
+    "infrastructure": {
+      "railways": 80000,
+      "highways": 150000,
+      "ports": 15,
+      "airports": 40,
+      "pipelines": 25000,
+      "electricity_grid": 90
     }
   },
   {
@@ -695,6 +727,14 @@
       "media_influence": 70,
       "sports_power": 65,
       "education_appeal": 85
+    },
+    "infrastructure": {
+      "railways": 60000,
+      "highways": 120000,
+      "ports": 20,
+      "airports": 45,
+      "pipelines": 15000,
+      "electricity_grid": 88
     }
   },
   {
@@ -822,6 +862,14 @@
       "media_influence": 60,
       "sports_power": 55,
       "education_appeal": 75
+    },
+    "infrastructure": {
+      "railways": 30000,
+      "highways": 80000,
+      "ports": 12,
+      "airports": 35,
+      "pipelines": 10000,
+      "electricity_grid": 85
     }
   },
   {
@@ -935,6 +983,14 @@
       "media_influence": 75,
       "sports_power": 60,
       "education_appeal": 85
+    },
+    "infrastructure": {
+      "railways": 20000,
+      "highways": 100000,
+      "ports": 20,
+      "airports": 25,
+      "pipelines": 8000,
+      "electricity_grid": 92
     }
   },
   {
@@ -1048,6 +1104,14 @@
       "media_influence": 40,
       "sports_power": 50,
       "education_appeal": 60
+    },
+    "infrastructure": {
+      "railways": 70000,
+      "highways": 200000,
+      "ports": 12,
+      "airports": 45,
+      "pipelines": 15000,
+      "electricity_grid": 70
     }
   },
   {
@@ -1161,6 +1225,14 @@
       "media_influence": 35,
       "sports_power": 55,
       "education_appeal": 55
+    },
+    "infrastructure": {
+      "railways": 40000,
+      "highways": 180000,
+      "ports": 15,
+      "airports": 35,
+      "pipelines": 10000,
+      "electricity_grid": 78
     }
   },
   {
@@ -1288,6 +1360,14 @@
       "media_influence": 40,
       "sports_power": 50,
       "education_appeal": 50
+    },
+    "infrastructure": {
+      "railways": 35000,
+      "highways": 90000,
+      "ports": 8,
+      "airports": 20,
+      "pipelines": 5000,
+      "electricity_grid": 82
     }
   }
 ]

@@ -5,6 +5,7 @@ import { tradeSimulator } from '../simulation/trade.js';
 import { TechnologySimulator } from '../simulation/technology.js';
 import { MilitarySimulator } from '../simulation/military.js';
 import { SoftPowerSimulator } from '../simulation/softpower.js';
+import { InfrastructureSimulator } from '../simulation/infrastructure.js';
 
 export const router = Router();
 
@@ -138,6 +139,16 @@ router.post('/countries/:id/softpower/invest', (req, res) => {
   }
   
   res.json({ success: true });
+});
+
+router.get('/countries/:id/infrastructure', (req, res) => {
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  res.json({
+    infrastructure: country.infrastructure || {},
+    logisticsEfficiency: country.logisticsEfficiency || 0,
+    tradeCapacity: InfrastructureSimulator.calculateTradeCapacity(country)
+  });
 });
 
 router.post('/military/attack', (req, res) => {
