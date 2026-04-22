@@ -7,6 +7,7 @@ import { MilitarySimulator } from './simulation/military.js';
 import { SoftPowerSimulator } from './simulation/softpower.js';
 import { InfrastructureSimulator } from './simulation/infrastructure.js';
 import { DemographicsSimulator } from './simulation/demographics.js';
+import { climateSimulator } from './simulation/climate.js';
 
 export class GameState {
   constructor() {
@@ -16,6 +17,7 @@ export class GameState {
     this.worldMarket = this.initMarket();
     this.events = [];
     this.resourceDeposits = this.initResourceDeposits();
+    this.globalTemperature = 0;
   }
 
   loadCountries() {
@@ -80,6 +82,8 @@ export class GameState {
     InfrastructureSimulator.simulate(this.countries);
 
     DemographicsSimulator.simulate(this.countries);
+
+    climateSimulator.simulate(this.countries);
 
     this.simulateAICountries();
     this.simulateMarket();

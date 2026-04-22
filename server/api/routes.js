@@ -7,6 +7,7 @@ import { MilitarySimulator } from '../simulation/military.js';
 import { SoftPowerSimulator } from '../simulation/softpower.js';
 import { InfrastructureSimulator } from '../simulation/infrastructure.js';
 import { DemographicsSimulator } from '../simulation/demographics.js';
+import { climateSimulator } from '../simulation/climate.js';
 
 export const router = Router();
 
@@ -112,6 +113,13 @@ router.get('/countries/:id/trade', (req, res) => {
 
 router.get('/events', (req, res) => {
   res.json(gameState.events || []);
+});
+
+router.get('/climate/weather', (req, res) => {
+  res.json({
+    active: climateSimulator.getActiveWeather(),
+    globalTemperature: climateSimulator.globalTemperature || 0
+  });
 });
 
 router.get('/countries/:id/tech', (req, res) => {
