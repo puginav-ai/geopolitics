@@ -6,6 +6,7 @@ import { TechnologySimulator } from '../simulation/technology.js';
 import { MilitarySimulator } from '../simulation/military.js';
 import { SoftPowerSimulator } from '../simulation/softpower.js';
 import { InfrastructureSimulator } from '../simulation/infrastructure.js';
+import { DemographicsSimulator } from '../simulation/demographics.js';
 
 export const router = Router();
 
@@ -148,6 +149,15 @@ router.get('/countries/:id/infrastructure', (req, res) => {
     infrastructure: country.infrastructure || {},
     logisticsEfficiency: country.logisticsEfficiency || 0,
     tradeCapacity: InfrastructureSimulator.calculateTradeCapacity(country)
+  });
+});
+
+router.get('/countries/:id/demographics', (req, res) => {
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  res.json({
+    demographics: country.demographics || {},
+    qualityOfLife: country.qualityOfLife || 0
   });
 });
 

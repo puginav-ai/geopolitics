@@ -160,6 +160,18 @@
       "airports": 50,
       "pipelines": 20000,
       "electricity_grid": 80
+    },
+    "demographics": {
+      "birth_rate": 1.5,
+      "death_rate": 1.2,
+      "urbanization": 75,
+      "migration": 50000,
+      "education_level": 75,
+      "income_distribution": {
+        "poor": 30,
+        "middle": 50,
+        "rich": 20
+      }
     }
   },
   {
@@ -323,6 +335,18 @@
       "airports": 150,
       "pipelines": 50000,
       "electricity_grid": 95
+    },
+    "demographics": {
+      "birth_rate": 1.2,
+      "death_rate": 0.9,
+      "urbanization": 82,
+      "migration": 100000,
+      "education_level": 90,
+      "income_distribution": {
+        "poor": 15,
+        "middle": 50,
+        "rich": 35
+      }
     }
   },
   {
@@ -486,6 +510,18 @@
       "airports": 80,
       "pipelines": 30000,
       "electricity_grid": 85
+    },
+    "demographics": {
+      "birth_rate": 1.3,
+      "death_rate": 0.7,
+      "urbanization": 60,
+      "migration": -50000,
+      "education_level": 80,
+      "income_distribution": {
+        "poor": 25,
+        "middle": 55,
+        "rich": 20
+      }
     }
   },
   {
@@ -607,6 +643,18 @@
       "airports": 40,
       "pipelines": 25000,
       "electricity_grid": 90
+    },
+    "demographics": {
+      "birth_rate": 1.1,
+      "death_rate": 0.9,
+      "urbanization": 80,
+      "migration": 30000,
+      "education_level": 85,
+      "income_distribution": {
+        "poor": 18,
+        "middle": 52,
+        "rich": 30
+      }
     }
   },
   {
@@ -735,6 +783,18 @@
       "airports": 45,
       "pipelines": 15000,
       "electricity_grid": 88
+    },
+    "demographics": {
+      "birth_rate": 1.0,
+      "death_rate": 0.9,
+      "urbanization": 80,
+      "migration": 25000,
+      "education_level": 88,
+      "income_distribution": {
+        "poor": 17,
+        "middle": 53,
+        "rich": 30
+      }
     }
   },
   {
@@ -870,6 +930,18 @@
       "airports": 35,
       "pipelines": 10000,
       "electricity_grid": 85
+    },
+    "demographics": {
+      "birth_rate": 1.3,
+      "death_rate": 1.0,
+      "urbanization": 78,
+      "migration": 20000,
+      "education_level": 86,
+      "income_distribution": {
+        "poor": 16,
+        "middle": 54,
+        "rich": 30
+      }
     }
   },
   {
@@ -991,6 +1063,18 @@
       "airports": 25,
       "pipelines": 8000,
       "electricity_grid": 92
+    },
+    "demographics": {
+      "birth_rate": 0.7,
+      "death_rate": 0.9,
+      "urbanization": 92,
+      "migration": 10000,
+      "education_level": 90,
+      "income_distribution": {
+        "poor": 12,
+        "middle": 58,
+        "rich": 30
+      }
     }
   },
   {
@@ -1112,6 +1196,18 @@
       "airports": 45,
       "pipelines": 15000,
       "electricity_grid": 70
+    },
+    "demographics": {
+      "birth_rate": 2.2,
+      "death_rate": 0.8,
+      "urbanization": 35,
+      "migration": -10000,
+      "education_level": 65,
+      "income_distribution": {
+        "poor": 45,
+        "middle": 45,
+        "rich": 10
+      }
     }
   },
   {
@@ -1233,6 +1329,18 @@
       "airports": 35,
       "pipelines": 10000,
       "electricity_grid": 78
+    },
+    "demographics": {
+      "birth_rate": 1.5,
+      "death_rate": 0.7,
+      "urbanization": 85,
+      "migration": 5000,
+      "education_level": 75,
+      "income_distribution": {
+        "poor": 25,
+        "middle": 55,
+        "rich": 20
+      }
     }
   },
   {
@@ -1368,6 +1476,18 @@
       "airports": 20,
       "pipelines": 5000,
       "electricity_grid": 82
+    },
+    "demographics": {
+      "birth_rate": 1.3,
+      "death_rate": 0.7,
+      "urbanization": 86,
+      "migration": 15000,
+      "education_level": 80,
+      "income_distribution": {
+        "poor": 15,
+        "middle": 55,
+        "rich": 30
+      }
     }
   }
 ]
