@@ -7,7 +7,8 @@ router.get('/state', (req, res) => {
   res.json({
     turn: gameState.currentTurn,
     turnDuration: gameState.turnDuration,
-    worldMarket: gameState.worldMarket
+    worldMarket: gameState.worldMarket,
+    countries: gameState.countries
   });
 });
 
@@ -21,7 +22,22 @@ router.get('/countries/:id', (req, res) => {
   res.json(country);
 });
 
+router.post('/turn/process', (req, res) => {
+  const { playerActions } = req.body;
+  gameState.processTurn(playerActions || []);
+  res.json({
+    turn: gameState.currentTurn,
+    worldMarket: gameState.worldMarket,
+    countries: gameState.countries
+  });
+});
+
 router.post('/countries/:id/action', (req, res) => {
-  const { action, params } = req.body;
-  res.json({ success: true });
+  const { action } = req.body;
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+
+  gameState.applyAction({ ...action, countryId: req.params.id });
+
+  res.json({ success: true, country });
 });
