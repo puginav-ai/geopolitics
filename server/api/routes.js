@@ -207,3 +207,35 @@ router.post('/player/country', (req, res) => {
   gameState.setPlayerCountry(countryId);
   res.json({ success: true, playerCountry: countryId });
 });
+
+router.get('/organizations', (req, res) => {
+  res.json(gameState.organizations);
+});
+
+router.get('/organizations/:id', (req, res) => {
+  const org = gameState.organizations[req.params.id];
+  if (!org) return res.status(404).json({ error: 'Not found' });
+  res.json(org);
+});
+
+router.post('/organizations/:id/join', (req, res) => {
+  const { countryId } = req.body;
+  const org = gameState.organizations[req.params.id];
+  if (!org) return res.status(404).json({ error: 'Not found' });
+
+  if (!org.members.includes(countryId)) {
+    org.members.push(countryId);
+  }
+
+  res.json({ success: true, organization: org });
+});
+
+router.post('/organizations/:id/leave', (req, res) => {
+  const { countryId } = req.body;
+  const org = gameState.organizations[req.params.id];
+  if (!org) return res.status(404).json({ error: 'Not found' });
+
+  org.members = org.members.filter(m => m !== countryId);
+
+  res.json({ success: true, organization: org });
+});

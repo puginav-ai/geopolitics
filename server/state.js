@@ -20,6 +20,7 @@ export class GameState {
     this.resourceDeposits = this.initResourceDeposits();
     this.globalTemperature = 0;
     this.playerCountryId = null;
+    this.organizations = this.initOrganizations();
   }
 
   loadCountries() {
@@ -56,6 +57,39 @@ export class GameState {
       'rare_earth_africa': { rare_earth: 300, region: 'Congo', controlledBy: [] },
       'lithium_samerica': { lithium: 400, region: 'Bolivia/Chile', controlledBy: [] },
       'cobalt_africa': { cobalt: 300, region: 'DR Congo', controlledBy: [] }
+    };
+  }
+
+  initOrganizations() {
+    return {
+      'un': {
+        name: 'United Nations',
+        members: ['russia', 'usa', 'china', 'germany', 'france', 'uk', 'japan', 'india', 'brazil'],
+        votes: {},
+        security_council: ['usa', 'russia', 'china', 'france', 'uk']
+      },
+      'nato': {
+        name: 'NATO',
+        members: ['usa', 'germany', 'france', 'uk'],
+        defense_spending: 0.02,
+        collective_defense: true
+      },
+      'eu': {
+        name: 'European Union',
+        members: ['germany', 'france', 'uk'],
+        common_market: true,
+        currency: 'eur'
+      },
+      'opec': {
+        name: 'OPEC',
+        members: [],
+        oil_production_control: true
+      },
+      'g20': {
+        name: 'G20',
+        members: ['russia', 'usa', 'china', 'germany', 'france', 'uk', 'japan', 'india', 'brazil', 'australia'],
+        economic_coordination: true
+      }
     };
   }
 
