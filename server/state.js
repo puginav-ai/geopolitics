@@ -1,4 +1,5 @@
 import { SectorSimulator } from './simulation/sectors.js';
+import { DiplomacySimulator } from './simulation/diplomacy.js';
 
 export class GameState {
   constructor() {
@@ -36,6 +37,7 @@ export class GameState {
     }
 
     SectorSimulator.simulateSectors(this.countries);
+    DiplomacySimulator.simulateDiplomacy(this.countries, this.worldMarket);
 
     this.simulateAICountries();
     this.simulateMarket();

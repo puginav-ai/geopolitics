@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { gameState } from '../index.js';
+import { DiplomacySimulator } from '../simulation/diplomacy.js';
 
 export const router = Router();
 
@@ -40,4 +41,29 @@ router.post('/countries/:id/action', (req, res) => {
   gameState.applyAction({ ...action, countryId: req.params.id });
 
   res.json({ success: true, country });
+});
+
+router.post('/diplomacy/propose', (req, res) => {
+  const { countryId, targetId, type } = req.body;
+  const result = DiplomacySimulator.proposeAgreement(countryId, targetId, type);
+  res.json(result);
+});
+
+router.get('/countries/:id/relations', (req, res) => {
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  res.json(country.relations || {});
+});
+
+router.post('/countries/:id/relations/:targetId', (req, res) => {
+  const country = gameState.getCountry(req.params.id);
+  const target = gameState.getCountry(req.params.targetId);
+  if (!country || !target) return res.status(404).json({ error: 'Not found' });
+
+  const { score, action } = req.body;
+  if (score !== undefined) {
+    country.relations[req.params.targetId].score = score;
+  }
+  
+  res.json({ success: true });
 });

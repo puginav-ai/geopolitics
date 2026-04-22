@@ -57,9 +57,20 @@
       "nuclear": 6000
     },
     "relations": {
-      "usa": -50,
-      "china": 70,
-      "eu": -30
+      "usa": {
+        "score": -20,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": ["export", "tech"],
+        "cultural_influence": 15
+      },
+      "china": {
+        "score": 30,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 10
+      }
     }
   },
   {
@@ -120,9 +131,20 @@
       "nuclear": 5000
     },
     "relations": {
-      "russia": -50,
-      "china": -30,
-      "eu": 80
+      "russia": {
+        "score": -25,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": ["export", "tech", "finance"],
+        "cultural_influence": 5
+      },
+      "china": {
+        "score": -40,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": ["tech", "chips"],
+        "cultural_influence": 8
+      }
     }
   },
   {
@@ -183,9 +205,20 @@
       "nuclear": 3000
     },
     "relations": {
-      "russia": 70,
-      "usa": -30,
-      "eu": -20
+      "russia": {
+        "score": 25,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 12
+      },
+      "usa": {
+        "score": -35,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": ["chips", "tech"],
+        "cultural_influence": 3
+      }
     }
   }
 ]
