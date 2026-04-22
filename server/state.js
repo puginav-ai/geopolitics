@@ -2,6 +2,7 @@ import { SectorSimulator } from './simulation/sectors.js';
 import { DiplomacySimulator } from './simulation/diplomacy.js';
 import { tradeSimulator } from './simulation/trade.js';
 import { eventsSimulator } from './simulation/events.js';
+import { TechnologySimulator } from './simulation/technology.js';
 
 export class GameState {
   constructor() {
@@ -45,6 +46,8 @@ export class GameState {
 
     const events = eventsSimulator.generateEvents(this.countries, this);
     this.events = events;
+
+    TechnologySimulator.simulateTech(this.countries);
 
     this.simulateAICountries();
     this.simulateMarket();

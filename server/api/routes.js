@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { gameState } from '../index.js';
 import { DiplomacySimulator } from '../simulation/diplomacy.js';
 import { tradeSimulator } from '../simulation/trade.js';
+import { TechnologySimulator } from '../simulation/technology.js';
 
 export const router = Router();
 
@@ -91,4 +92,19 @@ router.get('/countries/:id/trade', (req, res) => {
 
 router.get('/events', (req, res) => {
   res.json(gameState.events || []);
+});
+
+router.get('/countries/:id/tech', (req, res) => {
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  res.json(country.technologies || {});
+});
+
+router.post('/countries/:id/tech/develop', (req, res) => {
+  const { tech, level } = req.body;
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  
+  const result = TechnologySimulator.canDevelop(country, tech, level);
+  res.json(result);
 });

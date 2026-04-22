@@ -120,6 +120,15 @@
         "sanctions": [],
         "cultural_influence": 10
       }
+    },
+    "technologies": {
+      "ai": 5,
+      "nuclear_weapons": true,
+      "nuclear_energy": 3,
+      "semiconductors": 4,
+      "space": 3,
+      "renewables": 4,
+      "cyber": 3
     }
   },
   {
@@ -243,6 +252,15 @@
         "sanctions": [],
         "cultural_influence": 45
       }
+    },
+    "technologies": {
+      "ai": 8,
+      "nuclear_weapons": true,
+      "nuclear_energy": 5,
+      "semiconductors": 5,
+      "space": 5,
+      "renewables": 4,
+      "cyber": 5
     }
   },
   {
@@ -310,7 +328,7 @@
         "sanctions": [],
         "cultural_influence": 12
       },
-"usa": {
+      "usa": {
         "score": -35,
         "trade_agreement": false,
         "military_alliance": false,
@@ -366,6 +384,15 @@
         "sanctions": [],
         "cultural_influence": 12
       }
+    },
+    "technologies": {
+      "ai": 7,
+      "nuclear_weapons": true,
+      "nuclear_energy": 4,
+      "semiconductors": 4,
+      "space": 4,
+      "renewables": 5,
+      "cyber": 4
     }
   },
   {
@@ -447,6 +474,15 @@
         "sanctions": [],
         "cultural_influence": 8
       }
+    },
+    "technologies": {
+      "ai": 7,
+      "nuclear_weapons": false,
+      "nuclear_energy": 4,
+      "semiconductors": 4,
+      "space": 2,
+      "renewables": 5,
+      "cyber": 4
     }
   },
   {
@@ -535,6 +571,15 @@
         "sanctions": [],
         "cultural_influence": 45
       }
+    },
+    "technologies": {
+      "ai": 6,
+      "nuclear_weapons": true,
+      "nuclear_energy": 5,
+      "semiconductors": 3,
+      "space": 3,
+      "renewables": 4,
+      "cyber": 3
     }
   },
   {
@@ -630,6 +675,15 @@
         "sanctions": [],
         "cultural_influence": 38
       }
+    },
+    "technologies": {
+      "ai": 7,
+      "nuclear_weapons": true,
+      "nuclear_energy": 4,
+      "semiconductors": 3,
+      "space": 2,
+      "renewables": 4,
+      "cyber": 4
     }
   },
   {
@@ -711,6 +765,15 @@
         "sanctions": [],
         "cultural_influence": 8
       }
+    },
+    "technologies": {
+      "ai": 7,
+      "nuclear_weapons": false,
+      "nuclear_energy": 3,
+      "semiconductors": 5,
+      "space": 3,
+      "renewables": 4,
+      "cyber": 4
     }
   },
   {
@@ -792,6 +855,15 @@
         "sanctions": [],
         "cultural_influence": 5
       }
+    },
+    "technologies": {
+      "ai": 5,
+      "nuclear_weapons": true,
+      "nuclear_energy": 3,
+      "semiconductors": 2,
+      "space": 4,
+      "renewables": 3,
+      "cyber": 2
     }
   },
   {
@@ -873,6 +945,15 @@
         "sanctions": [],
         "cultural_influence": 18
       }
+    },
+    "technologies": {
+      "ai": 4,
+      "nuclear_weapons": false,
+      "nuclear_energy": 2,
+      "semiconductors": 2,
+      "space": 2,
+      "renewables": 4,
+      "cyber": 2
     }
   },
   {
@@ -968,6 +1049,15 @@
         "sanctions": [],
         "cultural_influence": 20
       }
+    },
+    "technologies": {
+      "ai": 5,
+      "nuclear_weapons": false,
+      "nuclear_energy": 0,
+      "semiconductors": 2,
+      "space": 2,
+      "renewables": 4,
+      "cyber": 3
     }
   }
 ]
