@@ -64,6 +64,55 @@
         "sanctions": ["export", "tech"],
         "cultural_influence": 15
       },
+      "germany": {
+        "score": 15,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 20
+      },
+      "france": {
+        "score": 10,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 18
+      },
+      "uk": {
+        "score": -5,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": ["finance", "export"],
+        "cultural_influence": 12
+      },
+      "japan": {
+        "score": 5,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 15
+      },
+      "india": {
+        "score": 45,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 25
+      },
+      "brazil": {
+        "score": 25,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 20
+      },
+      "australia": {
+        "score": -10,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 15
+      },
       "china": {
         "score": 30,
         "trade_agreement": true,
@@ -144,6 +193,55 @@
         "military_alliance": false,
         "sanctions": ["tech", "chips"],
         "cultural_influence": 8
+      },
+      "germany": {
+        "score": 40,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 25
+      },
+      "france": {
+        "score": 45,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 30
+      },
+      "uk": {
+        "score": 55,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 40
+      },
+      "japan": {
+        "score": 60,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 35
+      },
+      "india": {
+        "score": 20,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 15
+      },
+      "brazil": {
+        "score": 35,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 25
+      },
+      "australia": {
+        "score": 70,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 45
       }
     }
   },
@@ -212,12 +310,663 @@
         "sanctions": [],
         "cultural_influence": 12
       },
-      "usa": {
+"usa": {
         "score": -35,
         "trade_agreement": false,
         "military_alliance": false,
         "sanctions": ["chips", "tech"],
         "cultural_influence": 3
+      },
+      "germany": {
+        "score": -10,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 8
+      },
+      "france": {
+        "score": -5,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 7
+      },
+      "uk": {
+        "score": -15,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 10
+      },
+      "japan": {
+        "score": -25,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 8
+      },
+      "india": {
+        "score": -30,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 5
+      },
+      "brazil": {
+        "score": 40,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 18
+      },
+      "australia": {
+        "score": -20,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 12
+      }
+    }
+  },
+  {
+    "id": "germany",
+    "name": "Germany",
+    "lat": 51,
+    "lon": 10,
+    "population": 83000000,
+    "gdp": 4200000000000,
+    "stability": 78,
+    "sectors": {
+      "agriculture": {
+        "land": 18000000,
+        "yield_per_hectare": 7000,
+        "production": 40000000000,
+        "export": 15000000000,
+        "import": 12000000000,
+        "jobs": 800000,
+        "technology_level": 7
+      },
+      "industry": {
+        "factories": 5000,
+        "output_per_factory": 120000000,
+        "production": 600000000000,
+        "automation_level": 65,
+        "jobs": 12000000,
+        "technology_level": 7
+      },
+      "energy": {
+        "capacity": {
+          "coal": 30000,
+          "gas": 80000,
+          "nuclear": 15000,
+          "renewables": 120000
+        },
+        "production": 500000000,
+        "consumption": 520000000,
+        "export": 80000000,
+        "import": 150000000
+      },
+      "services": {
+        "gdp_share": 70,
+        "jobs": 25000000,
+        "productivity": 60000
+      }
+    },
+    "budget": {
+      "revenue": 800000000000,
+      "defense": 50000000000,
+      "social": 350000000000,
+      "infrastructure": 80000000000
+    },
+    "military": {
+      "personnel": 180000,
+      "tanks": 300,
+      "aircraft": 600,
+      "navy": 80,
+      "nuclear": 0
+    },
+    "relations": {
+      "russia": {
+        "score": -15,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 20
+      },
+      "usa": {
+        "score": 40,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 25
+      },
+      "china": {
+        "score": -10,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 8
+      }
+    }
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "lat": 46,
+    "lon": 2,
+    "population": 67000000,
+    "gdp": 2900000000000,
+    "stability": 75,
+    "sectors": {
+      "agriculture": {
+        "land": 30000000,
+        "yield_per_hectare": 6500,
+        "production": 45000000000,
+        "export": 20000000000,
+        "import": 15000000000,
+        "jobs": 1000000,
+        "technology_level": 6
+      },
+      "industry": {
+        "factories": 3500,
+        "output_per_factory": 100000000,
+        "production": 350000000000,
+        "automation_level": 55,
+        "jobs": 8000000,
+        "technology_level": 6
+      },
+      "energy": {
+        "capacity": {
+          "coal": 5000,
+          "gas": 50000,
+          "nuclear": 60000,
+          "renewables": 50000
+        },
+        "production": 450000000,
+        "consumption": 420000000,
+        "export": 100000000,
+        "import": 80000000
+      },
+      "services": {
+        "gdp_share": 72,
+        "jobs": 18000000,
+        "productivity": 55000
+      }
+    },
+    "budget": {
+      "revenue": 600000000000,
+      "defense": 45000000000,
+      "social": 280000000000,
+      "infrastructure": 60000000000
+    },
+    "military": {
+      "personnel": 300000,
+      "tanks": 400,
+      "aircraft": 1000,
+      "navy": 120,
+      "nuclear": 300
+    },
+    "relations": {
+      "russia": {
+        "score": -10,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 18
+      },
+      "usa": {
+        "score": 45,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 30
+      },
+      "china": {
+        "score": -5,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 7
+      },
+      "germany": {
+        "score": 60,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 45
+      }
+    }
+  },
+  {
+    "id": "uk",
+    "name": "United Kingdom",
+    "lat": 51,
+    "lon": -1,
+    "population": 67000000,
+    "gdp": 3000000000000,
+    "stability": 77,
+    "sectors": {
+      "agriculture": {
+        "land": 10000000,
+        "yield_per_hectare": 7500,
+        "production": 20000000000,
+        "export": 8000000000,
+        "import": 15000000000,
+        "jobs": 500000,
+        "technology_level": 7
+      },
+      "industry": {
+        "factories": 2500,
+        "output_per_factory": 150000000,
+        "production": 380000000000,
+        "automation_level": 60,
+        "jobs": 6000000,
+        "technology_level": 7
+      },
+      "energy": {
+        "capacity": {
+          "coal": 10000,
+          "gas": 60000,
+          "nuclear": 8000,
+          "renewables": 40000
+        },
+        "production": 350000000,
+        "consumption": 340000000,
+        "export": 30000000,
+        "import": 60000000
+      },
+      "services": {
+        "gdp_share": 75,
+        "jobs": 20000000,
+        "productivity": 65000
+      }
+    },
+    "budget": {
+      "revenue": 550000000000,
+      "defense": 55000000000,
+      "social": 250000000000,
+      "infrastructure": 70000000000
+    },
+    "military": {
+      "personnel": 200000,
+      "tanks": 250,
+      "aircraft": 800,
+      "navy": 100,
+      "nuclear": 200
+    },
+    "relations": {
+      "russia": {
+        "score": -20,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": ["finance", "export"],
+        "cultural_influence": 12
+      },
+      "usa": {
+        "score": 55,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 40
+      },
+      "china": {
+        "score": -15,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 10
+      },
+      "germany": {
+        "score": 50,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 35
+      },
+      "france": {
+        "score": 55,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 38
+      }
+    }
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "lat": 36,
+    "lon": 138,
+    "population": 125000000,
+    "gdp": 4200000000000,
+    "stability": 82,
+    "sectors": {
+      "agriculture": {
+        "land": 5000000,
+        "yield_per_hectare": 6000,
+        "production": 8000000000,
+        "export": 2000000000,
+        "import": 10000000000,
+        "jobs": 300000,
+        "technology_level": 7
+      },
+      "industry": {
+        "factories": 8000,
+        "output_per_factory": 130000000,
+        "production": 1050000000000,
+        "automation_level": 75,
+        "jobs": 15000000,
+        "technology_level": 8
+      },
+      "energy": {
+        "capacity": {
+          "coal": 100000,
+          "gas": 50000,
+          "nuclear": 10000,
+          "renewables": 60000
+        },
+        "production": 900000000,
+        "consumption": 950000000,
+        "export": 10000000,
+        "import": 200000000
+      },
+      "services": {
+        "gdp_share": 72,
+        "jobs": 35000000,
+        "productivity": 55000
+      }
+    },
+    "budget": {
+      "revenue": 850000000000,
+      "defense": 50000000000,
+      "social": 320000000000,
+      "infrastructure": 120000000000
+    },
+    "military": {
+      "personnel": 250000,
+      "tanks": 1000,
+      "aircraft": 1500,
+      "navy": 150,
+      "nuclear": 0
+    },
+    "relations": {
+      "russia": {
+        "score": -5,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 15
+      },
+      "usa": {
+        "score": 60,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 35
+      },
+      "china": {
+        "score": -25,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 8
+      }
+    }
+  },
+  {
+    "id": "india",
+    "name": "India",
+    "lat": 20,
+    "lon": 78,
+    "population": 1400000000,
+    "gdp": 3400000000000,
+    "stability": 60,
+    "sectors": {
+      "agriculture": {
+        "land": 180000000,
+        "yield_per_hectare": 3000,
+        "production": 400000000000,
+        "export": 30000000000,
+        "import": 20000000000,
+        "jobs": 200000000,
+        "technology_level": 3
+      },
+      "industry": {
+        "factories": 10000,
+        "output_per_factory": 50000000,
+        "production": 500000000000,
+        "automation_level": 30,
+        "jobs": 50000000,
+        "technology_level": 4
+      },
+      "energy": {
+        "capacity": {
+          "coal": 300000,
+          "gas": 50000,
+          "nuclear": 5000,
+          "renewables": 100000
+        },
+        "production": 1200000000,
+        "consumption": 1100000000,
+        "export": 50000000,
+        "import": 100000000
+      },
+      "services": {
+        "gdp_share": 45,
+        "jobs": 100000000,
+        "productivity": 12000
+      }
+    },
+    "budget": {
+      "revenue": 500000000000,
+      "defense": 60000000000,
+      "social": 200000000000,
+      "infrastructure": 80000000000
+    },
+    "military": {
+      "personnel": 3000000,
+      "tanks": 4000,
+      "aircraft": 2000,
+      "navy": 150,
+      "nuclear": 160
+    },
+    "relations": {
+      "russia": {
+        "score": 45,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 25
+      },
+      "usa": {
+        "score": 20,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 15
+      },
+      "china": {
+        "score": -30,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 5
+      }
+    }
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "lat": -15,
+    "lon": -47,
+    "population": 215000000,
+    "gdp": 1900000000000,
+    "stability": 65,
+    "sectors": {
+      "agriculture": {
+        "land": 80000000,
+        "yield_per_hectare": 4000,
+        "production": 150000000000,
+        "export": 50000000000,
+        "import": 8000000000,
+        "jobs": 20000000,
+        "technology_level": 4
+      },
+      "industry": {
+        "factories": 4000,
+        "output_per_factory": 60000000,
+        "production": 250000000000,
+        "automation_level": 35,
+        "jobs": 15000000,
+        "technology_level": 5
+      },
+      "energy": {
+        "capacity": {
+          "coal": 5000,
+          "gas": 40000,
+          "nuclear": 2000,
+          "renewables": 100000
+        },
+        "production": 550000000,
+        "consumption": 500000000,
+        "export": 80000000,
+        "import": 30000000
+      },
+      "services": {
+        "gdp_share": 65,
+        "jobs": 45000000,
+        "productivity": 18000
+      }
+    },
+    "budget": {
+      "revenue": 400000000000,
+      "defense": 35000000000,
+      "social": 180000000000,
+      "infrastructure": 50000000000
+    },
+    "military": {
+      "personnel": 400000,
+      "tanks": 500,
+      "aircraft": 700,
+      "navy": 100,
+      "nuclear": 0
+    },
+    "relations": {
+      "russia": {
+        "score": 25,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 20
+      },
+      "usa": {
+        "score": 35,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 25
+      },
+      "china": {
+        "score": 40,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 18
+      }
+    }
+  },
+  {
+    "id": "australia",
+    "name": "Australia",
+    "lat": -25,
+    "lon": 133,
+    "population": 26000000,
+    "gdp": 1700000000000,
+    "stability": 85,
+    "sectors": {
+      "agriculture": {
+        "land": 45000000,
+        "yield_per_hectare": 5000,
+        "production": 60000000000,
+        "export": 40000000000,
+        "import": 5000000000,
+        "jobs": 400000,
+        "technology_level": 6
+      },
+      "industry": {
+        "factories": 1500,
+        "output_per_factory": 80000000,
+        "production": 120000000000,
+        "automation_level": 50,
+        "jobs": 3000000,
+        "technology_level": 5
+      },
+      "energy": {
+        "capacity": {
+          "coal": 50000,
+          "gas": 40000,
+          "nuclear": 0,
+          "renewables": 30000
+        },
+        "production": 250000000,
+        "consumption": 230000000,
+        "export": 100000000,
+        "import": 20000000
+      },
+      "services": {
+        "gdp_share": 68,
+        "jobs": 9000000,
+        "productivity": 70000
+      }
+    },
+    "budget": {
+      "revenue": 350000000000,
+      "defense": 30000000000,
+      "social": 150000000000,
+      "infrastructure": 60000000000
+    },
+    "military": {
+      "personnel": 80000,
+      "tanks": 100,
+      "aircraft": 300,
+      "navy": 50,
+      "nuclear": 0
+    },
+    "relations": {
+      "russia": {
+        "score": -10,
+        "trade_agreement": false,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 15
+      },
+      "usa": {
+        "score": 70,
+        "trade_agreement": true,
+        "military_alliance": true,
+        "sanctions": [],
+        "cultural_influence": 45
+      },
+      "china": {
+        "score": -20,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 12
+      },
+      "japan": {
+        "score": 55,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 25
+      },
+      "india": {
+        "score": 40,
+        "trade_agreement": true,
+        "military_alliance": false,
+        "sanctions": [],
+        "cultural_influence": 20
       }
     }
   }
