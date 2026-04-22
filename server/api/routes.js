@@ -201,3 +201,9 @@ router.post('/military/attack', (req, res) => {
     defenderStrength: MilitarySimulator.calculateStrength(defender)
   });
 });
+
+router.post('/player/country', (req, res) => {
+  const { countryId } = req.body;
+  gameState.setPlayerCountry(countryId);
+  res.json({ success: true, playerCountry: countryId });
+});

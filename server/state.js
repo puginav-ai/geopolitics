@@ -8,6 +8,7 @@ import { SoftPowerSimulator } from './simulation/softpower.js';
 import { InfrastructureSimulator } from './simulation/infrastructure.js';
 import { DemographicsSimulator } from './simulation/demographics.js';
 import { climateSimulator } from './simulation/climate.js';
+import { AISimulator } from './simulation/ai.js';
 
 export class GameState {
   constructor() {
@@ -18,6 +19,7 @@ export class GameState {
     this.events = [];
     this.resourceDeposits = this.initResourceDeposits();
     this.globalTemperature = 0;
+    this.playerCountryId = null;
   }
 
   loadCountries() {
@@ -107,12 +109,11 @@ export class GameState {
   }
 
   simulateAICountries() {
-    for (const country of this.countries) {
-      if (!country.isPlayer) {
-        country.stability += (Math.random() - 0.5) * 5;
-        country.stability = Math.max(0, Math.min(100, country.stability));
-      }
-    }
+    AISimulator.simulate(this.countries, this.playerCountryId);
+  }
+
+  setPlayerCountry(id) {
+    this.playerCountryId = id;
   }
 
   simulateMarket() {
