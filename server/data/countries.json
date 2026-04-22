@@ -51,10 +51,27 @@
     },
     "military": {
       "personnel": 1000000,
-      "tanks": 15000,
-      "aircraft": 3000,
-      "navy": 200,
-      "nuclear": 6000
+      "budget": 60000000000,
+      "readiness": 75,
+      "army": {
+        "divisions": 50,
+        "tanks": 2000,
+        "artillery": 1500
+      },
+      "airforce": {
+        "fighters": 300,
+        "bombers": 100,
+        "drones": 50
+      },
+      "navy": {
+        "carriers": 1,
+        "submarines": 10,
+        "destroyers": 20
+      },
+      "nuclear": {
+        "warheads": 1500,
+        "icbm": 300
+      }
     },
     "relations": {
       "usa": {
@@ -183,10 +200,27 @@
     },
     "military": {
       "personnel": 1400000,
-      "tanks": 8000,
-      "aircraft": 5000,
-      "navy": 500,
-      "nuclear": 5000
+      "budget": 800000000000,
+      "readiness": 85,
+      "army": {
+        "divisions": 80,
+        "tanks": 8000,
+        "artillery": 4000
+      },
+      "airforce": {
+        "fighters": 800,
+        "bombers": 200,
+        "drones": 500
+      },
+      "navy": {
+        "carriers": 11,
+        "submarines": 70,
+        "destroyers": 90
+      },
+      "nuclear": {
+        "warheads": 5000,
+        "icbm": 450
+      }
     },
     "relations": {
       "russia": {
@@ -315,10 +349,27 @@
     },
     "military": {
       "personnel": 2000000,
-      "tanks": 10000,
-      "aircraft": 4000,
-      "navy": 700,
-      "nuclear": 3000
+      "budget": 250000000000,
+      "readiness": 80,
+      "army": {
+        "divisions": 100,
+        "tanks": 10000,
+        "artillery": 5000
+      },
+      "airforce": {
+        "fighters": 1200,
+        "bombers": 400,
+        "drones": 200
+      },
+      "navy": {
+        "carriers": 2,
+        "submarines": 80,
+        "destroyers": 50
+      },
+      "nuclear": {
+        "warheads": 3000,
+        "icbm": 200
+      }
     },
     "relations": {
       "russia": {
@@ -447,10 +498,27 @@
     },
     "military": {
       "personnel": 180000,
-      "tanks": 300,
-      "aircraft": 600,
-      "navy": 80,
-      "nuclear": 0
+      "budget": 50000000000,
+      "readiness": 60,
+      "army": {
+        "divisions": 10,
+        "tanks": 300,
+        "artillery": 200
+      },
+      "airforce": {
+        "fighters": 150,
+        "bombers": 50,
+        "drones": 20
+      },
+      "navy": {
+        "carriers": 0,
+        "submarines": 6,
+        "destroyers": 10
+      },
+      "nuclear": {
+        "warheads": 0,
+        "icbm": 0
+      }
     },
     "relations": {
       "russia": {
@@ -537,10 +605,27 @@
     },
     "military": {
       "personnel": 300000,
-      "tanks": 400,
-      "aircraft": 1000,
-      "navy": 120,
-      "nuclear": 300
+      "budget": 45000000000,
+      "readiness": 65,
+      "army": {
+        "divisions": 15,
+        "tanks": 400,
+        "artillery": 250
+      },
+      "airforce": {
+        "fighters": 200,
+        "bombers": 80,
+        "drones": 30
+      },
+      "navy": {
+        "carriers": 1,
+        "submarines": 10,
+        "destroyers": 15
+      },
+      "nuclear": {
+        "warheads": 300,
+        "icbm": 50
+      }
     },
     "relations": {
       "russia": {
@@ -634,10 +719,27 @@
     },
     "military": {
       "personnel": 200000,
-      "tanks": 250,
-      "aircraft": 800,
-      "navy": 100,
-      "nuclear": 200
+      "budget": 55000000000,
+      "readiness": 70,
+      "army": {
+        "divisions": 12,
+        "tanks": 250,
+        "artillery": 150
+      },
+      "airforce": {
+        "fighters": 150,
+        "bombers": 60,
+        "drones": 40
+      },
+      "navy": {
+        "carriers": 2,
+        "submarines": 10,
+        "destroyers": 12
+      },
+      "nuclear": {
+        "warheads": 200,
+        "icbm": 40
+      }
     },
     "relations": {
       "russia": {
@@ -738,10 +840,27 @@
     },
     "military": {
       "personnel": 250000,
-      "tanks": 1000,
-      "aircraft": 1500,
-      "navy": 150,
-      "nuclear": 0
+      "budget": 50000000000,
+      "readiness": 60,
+      "army": {
+        "divisions": 8,
+        "tanks": 1000,
+        "artillery": 300
+      },
+      "airforce": {
+        "fighters": 300,
+        "bombers": 100,
+        "drones": 50
+      },
+      "navy": {
+        "carriers": 4,
+        "submarines": 20,
+        "destroyers": 40
+      },
+      "nuclear": {
+        "warheads": 0,
+        "icbm": 0
+      }
     },
     "relations": {
       "russia": {
@@ -828,10 +947,27 @@
     },
     "military": {
       "personnel": 3000000,
-      "tanks": 4000,
-      "aircraft": 2000,
-      "navy": 150,
-      "nuclear": 160
+      "budget": 60000000000,
+      "readiness": 55,
+      "army": {
+        "divisions": 80,
+        "tanks": 4000,
+        "artillery": 3500
+      },
+      "airforce": {
+        "fighters": 500,
+        "bombers": 100,
+        "drones": 150
+      },
+      "navy": {
+        "carriers": 2,
+        "submarines": 15,
+        "destroyers": 20
+      },
+      "nuclear": {
+        "warheads": 160,
+        "icbm": 100
+      }
     },
     "relations": {
       "russia": {
@@ -918,10 +1054,27 @@
     },
     "military": {
       "personnel": 400000,
-      "tanks": 500,
-      "aircraft": 700,
-      "navy": 100,
-      "nuclear": 0
+      "budget": 35000000000,
+      "readiness": 50,
+      "army": {
+        "divisions": 20,
+        "tanks": 500,
+        "artillery": 400
+      },
+      "airforce": {
+        "fighters": 150,
+        "bombers": 50,
+        "drones": 30
+      },
+      "navy": {
+        "carriers": 1,
+        "submarines": 5,
+        "destroyers": 10
+      },
+      "nuclear": {
+        "warheads": 0,
+        "icbm": 0
+      }
     },
     "relations": {
       "russia": {
@@ -1008,10 +1161,27 @@
     },
     "military": {
       "personnel": 80000,
-      "tanks": 100,
-      "aircraft": 300,
-      "navy": 50,
-      "nuclear": 0
+      "budget": 30000000000,
+      "readiness": 70,
+      "army": {
+        "divisions": 5,
+        "tanks": 100,
+        "artillery": 80
+      },
+      "airforce": {
+        "fighters": 80,
+        "bombers": 30,
+        "drones": 25
+      },
+      "navy": {
+        "carriers": 0,
+        "submarines": 6,
+        "destroyers": 8
+      },
+      "nuclear": {
+        "warheads": 0,
+        "icbm": 0
+      }
     },
     "relations": {
       "russia": {

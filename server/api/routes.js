@@ -3,6 +3,7 @@ import { gameState } from '../index.js';
 import { DiplomacySimulator } from '../simulation/diplomacy.js';
 import { tradeSimulator } from '../simulation/trade.js';
 import { TechnologySimulator } from '../simulation/technology.js';
+import { MilitarySimulator } from '../simulation/military.js';
 
 export const router = Router();
 
@@ -107,4 +108,30 @@ router.post('/countries/:id/tech/develop', (req, res) => {
   
   const result = TechnologySimulator.canDevelop(country, tech, level);
   res.json(result);
+});
+
+router.get('/countries/:id/military', (req, res) => {
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  res.json({
+    military: country.military,
+    strength: MilitarySimulator.calculateStrength(country)
+  });
+});
+
+router.post('/military/attack', (req, res) => {
+  const { attackerId, defenderId } = req.body;
+  const attacker = gameState.getCountry(attackerId);
+  const defender = gameState.getCountry(defenderId);
+
+  if (!attacker || !defender) {
+    return res.status(404).json({ error: 'Country not found' });
+  }
+
+  const canAttack = MilitarySimulator.canAttack(attacker, defender);
+  res.json({
+    canAttack,
+    attackerStrength: MilitarySimulator.calculateStrength(attacker),
+    defenderStrength: MilitarySimulator.calculateStrength(defender)
+  });
 });
