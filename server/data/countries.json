@@ -2,13 +2,46 @@
   {
     "id": "russia",
     "name": "Russia",
+    "lat": 61.5,
+    "lon": 105.3,
     "population": 144000000,
     "gdp": 1800000000000,
+    "stability": 65,
     "sectors": {
-      "energy": 0.6,
-      "agriculture": 0.1,
-      "industry": 0.2,
-      "tech": 0.1
+      "agriculture": {
+        "land": 120000000,
+        "yield_per_hectare": 2500,
+        "production": 120000000000,
+        "export": 30000000000,
+        "import": 10000000000,
+        "jobs": 5000000,
+        "technology_level": 3
+      },
+      "industry": {
+        "factories": 5000,
+        "output_per_factory": 80000000,
+        "production": 400000000000,
+        "automation_level": 40,
+        "jobs": 10000000,
+        "technology_level": 4
+      },
+      "energy": {
+        "capacity": {
+          "coal": 50000,
+          "gas": 150000,
+          "nuclear": 25000,
+          "renewables": 30000
+        },
+        "production": 1100000000,
+        "consumption": 1000000000,
+        "export": 200000000,
+        "import": 50000000
+      },
+      "services": {
+        "gdp_share": 55,
+        "jobs": 30000000,
+        "productivity": 30000
+      }
     },
     "budget": {
       "revenue": 300000000000,
@@ -32,13 +65,46 @@
   {
     "id": "usa",
     "name": "United States",
+    "lat": 38,
+    "lon": -97,
     "population": 331000000,
     "gdp": 23000000000000,
+    "stability": 80,
     "sectors": {
-      "energy": 0.15,
-      "agriculture": 0.05,
-      "industry": 0.15,
-      "tech": 0.45
+      "agriculture": {
+        "land": 90000000,
+        "yield_per_hectare": 8000,
+        "production": 180000000000,
+        "export": 70000000000,
+        "import": 20000000000,
+        "jobs": 3000000,
+        "technology_level": 8
+      },
+      "industry": {
+        "factories": 8000,
+        "output_per_factory": 150000000,
+        "production": 1200000000000,
+        "automation_level": 70,
+        "jobs": 15000000,
+        "technology_level": 8
+      },
+      "energy": {
+        "capacity": {
+          "coal": 100000,
+          "gas": 300000,
+          "nuclear": 100000,
+          "renewables": 150000
+        },
+        "production": 2500000000,
+        "consumption": 2300000000,
+        "export": 100000000,
+        "import": 200000000
+      },
+      "services": {
+        "gdp_share": 75,
+        "jobs": 100000000,
+        "productivity": 70000
+      }
     },
     "budget": {
       "revenue": 4000000000000,
@@ -62,13 +128,46 @@
   {
     "id": "china",
     "name": "China",
+    "lat": 35,
+    "lon": 105,
     "population": 1400000000,
     "gdp": 17000000000000,
+    "stability": 75,
     "sectors": {
-      "energy": 0.2,
-      "agriculture": 0.08,
-      "industry": 0.45,
-      "tech": 0.27
+      "agriculture": {
+        "land": 150000000,
+        "yield_per_hectare": 5500,
+        "production": 300000000000,
+        "export": 10000000000,
+        "import": 50000000000,
+        "jobs": 40000000,
+        "technology_level": 5
+      },
+      "industry": {
+        "factories": 20000,
+        "output_per_factory": 100000000,
+        "production": 4000000000000,
+        "automation_level": 50,
+        "jobs": 50000000,
+        "technology_level": 6
+      },
+      "energy": {
+        "capacity": {
+          "coal": 500000,
+          "gas": 200000,
+          "nuclear": 50000,
+          "renewables": 200000
+        },
+        "production": 4500000000,
+        "consumption": 4200000000,
+        "export": 150000000,
+        "import": 300000000
+      },
+      "services": {
+        "gdp_share": 50,
+        "jobs": 150000000,
+        "productivity": 20000
+      }
     },
     "budget": {
       "revenue": 3000000000000,

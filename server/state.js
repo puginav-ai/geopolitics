@@ -1,3 +1,5 @@
+import { SectorSimulator } from './simulation/sectors.js';
+
 export class GameState {
   constructor() {
     this.countries = this.loadCountries();
@@ -32,6 +34,8 @@ export class GameState {
     for (const action of playerActions) {
       this.applyAction(action);
     }
+
+    SectorSimulator.simulateSectors(this.countries);
 
     this.simulateAICountries();
     this.simulateMarket();
