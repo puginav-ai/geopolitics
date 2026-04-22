@@ -1,6 +1,7 @@
 import { SectorSimulator } from './simulation/sectors.js';
 import { DiplomacySimulator } from './simulation/diplomacy.js';
 import { tradeSimulator } from './simulation/trade.js';
+import { eventsSimulator } from './simulation/events.js';
 
 export class GameState {
   constructor() {
@@ -8,6 +9,7 @@ export class GameState {
     this.currentTurn = 1;
     this.turnDuration = 'month';
     this.worldMarket = this.initMarket();
+    this.events = [];
   }
 
   loadCountries() {
@@ -40,6 +42,9 @@ export class GameState {
     SectorSimulator.simulateSectors(this.countries);
     DiplomacySimulator.simulateDiplomacy(this.countries, this.worldMarket);
     tradeSimulator.simulateTrade(this.countries, this.worldMarket);
+
+    const events = eventsSimulator.generateEvents(this.countries, this);
+    this.events = events;
 
     this.simulateAICountries();
     this.simulateMarket();

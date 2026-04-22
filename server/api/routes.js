@@ -88,3 +88,7 @@ router.get('/countries/:id/trade', (req, res) => {
   if (!country) return res.status(404).json({ error: 'Not found' });
   res.json(country.sectors.trade || {});
 });
+
+router.get('/events', (req, res) => {
+  res.json(gameState.events || []);
+});
