@@ -1,0 +1,92 @@
+[
+  {
+    "id": "russia",
+    "name": "Russia",
+    "population": 144000000,
+    "gdp": 1800000000000,
+    "sectors": {
+      "energy": 0.6,
+      "agriculture": 0.1,
+      "industry": 0.2,
+      "tech": 0.1
+    },
+    "budget": {
+      "revenue": 300000000000,
+      "defense": 60000000000,
+      "social": 100000000000,
+      "infrastructure": 40000000000
+    },
+    "military": {
+      "personnel": 1000000,
+      "tanks": 15000,
+      "aircraft": 3000,
+      "navy": 200,
+      "nuclear": 6000
+    },
+    "relations": {
+      "usa": -50,
+      "china": 70,
+      "eu": -30
+    }
+  },
+  {
+    "id": "usa",
+    "name": "United States",
+    "population": 331000000,
+    "gdp": 23000000000000,
+    "sectors": {
+      "energy": 0.15,
+      "agriculture": 0.05,
+      "industry": 0.15,
+      "tech": 0.45
+    },
+    "budget": {
+      "revenue": 4000000000000,
+      "defense": 800000000000,
+      "social": 1500000000000,
+      "infrastructure": 300000000000
+    },
+    "military": {
+      "personnel": 1400000,
+      "tanks": 8000,
+      "aircraft": 5000,
+      "navy": 500,
+      "nuclear": 5000
+    },
+    "relations": {
+      "russia": -50,
+      "china": -30,
+      "eu": 80
+    }
+  },
+  {
+    "id": "china",
+    "name": "China",
+    "population": 1400000000,
+    "gdp": 17000000000000,
+    "sectors": {
+      "energy": 0.2,
+      "agriculture": 0.08,
+      "industry": 0.45,
+      "tech": 0.27
+    },
+    "budget": {
+      "revenue": 3000000000000,
+      "defense": 250000000000,
+      "social": 1200000000000,
+      "infrastructure": 600000000000
+    },
+    "military": {
+      "personnel": 2000000,
+      "tanks": 10000,
+      "aircraft": 4000,
+      "navy": 700,
+      "nuclear": 3000
+    },
+    "relations": {
+      "russia": 70,
+      "usa": -30,
+      "eu": -20
+    }
+  }
+]
