@@ -146,6 +146,12 @@
       "space": 3,
       "renewables": 4,
       "cyber": 3
+    },
+    "softpower": {
+      "cultural_presence": 30,
+      "media_influence": 25,
+      "sports_power": 20,
+      "education_appeal": 35
     }
   },
   {
@@ -295,6 +301,12 @@
       "space": 5,
       "renewables": 4,
       "cyber": 5
+    },
+    "softpower": {
+      "cultural_presence": 85,
+      "media_influence": 90,
+      "sports_power": 75,
+      "education_appeal": 95
     }
   },
   {
@@ -444,6 +456,12 @@
       "space": 4,
       "renewables": 5,
       "cyber": 4
+    },
+    "softpower": {
+      "cultural_presence": 60,
+      "media_influence": 50,
+      "sports_power": 45,
+      "education_appeal": 70
     }
   },
   {
@@ -551,6 +569,12 @@
       "space": 2,
       "renewables": 5,
       "cyber": 4
+    },
+    "softpower": {
+      "cultural_presence": 75,
+      "media_influence": 65,
+      "sports_power": 60,
+      "education_appeal": 80
     }
   },
   {
@@ -665,6 +689,12 @@
       "space": 3,
       "renewables": 4,
       "cyber": 3
+    },
+    "softpower": {
+      "cultural_presence": 80,
+      "media_influence": 70,
+      "sports_power": 65,
+      "education_appeal": 85
     }
   },
   {
@@ -786,6 +816,12 @@
       "space": 2,
       "renewables": 4,
       "cyber": 4
+    },
+    "softpower": {
+      "cultural_presence": 70,
+      "media_influence": 60,
+      "sports_power": 55,
+      "education_appeal": 75
     }
   },
   {
@@ -893,6 +929,12 @@
       "space": 3,
       "renewables": 4,
       "cyber": 4
+    },
+    "softpower": {
+      "cultural_presence": 65,
+      "media_influence": 75,
+      "sports_power": 60,
+      "education_appeal": 85
     }
   },
   {
@@ -1000,6 +1042,12 @@
       "space": 4,
       "renewables": 3,
       "cyber": 2
+    },
+    "softpower": {
+      "cultural_presence": 55,
+      "media_influence": 40,
+      "sports_power": 50,
+      "education_appeal": 60
     }
   },
   {
@@ -1107,6 +1155,12 @@
       "space": 2,
       "renewables": 4,
       "cyber": 2
+    },
+    "softpower": {
+      "cultural_presence": 50,
+      "media_influence": 35,
+      "sports_power": 55,
+      "education_appeal": 55
     }
   },
   {
@@ -1228,6 +1282,12 @@
       "space": 2,
       "renewables": 4,
       "cyber": 3
+    },
+    "softpower": {
+      "cultural_presence": 45,
+      "media_influence": 40,
+      "sports_power": 50,
+      "education_appeal": 50
     }
   }
 ]

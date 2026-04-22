@@ -4,6 +4,7 @@ import { DiplomacySimulator } from '../simulation/diplomacy.js';
 import { tradeSimulator } from '../simulation/trade.js';
 import { TechnologySimulator } from '../simulation/technology.js';
 import { MilitarySimulator } from '../simulation/military.js';
+import { SoftPowerSimulator } from '../simulation/softpower.js';
 
 export const router = Router();
 
@@ -117,6 +118,26 @@ router.get('/countries/:id/military', (req, res) => {
     military: country.military,
     strength: MilitarySimulator.calculateStrength(country)
   });
+});
+
+router.get('/countries/:id/softpower', (req, res) => {
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  res.json(country.softpower || {});
+});
+
+router.post('/countries/:id/softpower/invest', (req, res) => {
+  const { amount, type } = req.body;
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  
+  if (type === 'culture') {
+    SoftPowerSimulator.investInCulture(country, amount);
+  } else if (type === 'event') {
+    SoftPowerSimulator.hostEvent(country, amount);
+  }
+  
+  res.json({ success: true });
 });
 
 router.post('/military/attack', (req, res) => {
