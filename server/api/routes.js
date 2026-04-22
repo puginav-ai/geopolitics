@@ -78,6 +78,22 @@ router.get('/trade/routes', (req, res) => {
   res.json(tradeSimulator.getTradeRoutes());
 });
 
+router.get('/resources/deposits', (req, res) => {
+  res.json(gameState.resourceDeposits);
+});
+
+router.post('/resources/control', (req, res) => {
+  const { depositId, countryId } = req.body;
+  const deposit = gameState.resourceDeposits[depositId];
+  if (!deposit) return res.status(404).json({ error: 'Deposit not found' });
+  
+  if (!deposit.controlledBy.includes(countryId)) {
+    deposit.controlledBy.push(countryId);
+  }
+  
+  res.json({ success: true, deposit });
+});
+
 router.get('/market/prices', (req, res) => {
   res.json(gameState.worldMarket);
 });
