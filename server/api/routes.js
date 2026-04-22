@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { gameState } from '../index.js';
 import { DiplomacySimulator } from '../simulation/diplomacy.js';
+import { tradeSimulator } from '../simulation/trade.js';
 
 export const router = Router();
 
@@ -64,6 +65,26 @@ router.post('/countries/:id/relations/:targetId', (req, res) => {
   if (score !== undefined) {
     country.relations[req.params.targetId].score = score;
   }
-  
+
   res.json({ success: true });
+});
+
+router.get('/trade/routes', (req, res) => {
+  res.json(tradeSimulator.getTradeRoutes());
+});
+
+router.get('/market/prices', (req, res) => {
+  res.json(gameState.worldMarket);
+});
+
+router.post('/trade/route', (req, res) => {
+  const { from, to, resource, volume } = req.body;
+  tradeSimulator.addTradeRoute(from, to, resource, volume);
+  res.json({ success: true });
+});
+
+router.get('/countries/:id/trade', (req, res) => {
+  const country = gameState.getCountry(req.params.id);
+  if (!country) return res.status(404).json({ error: 'Not found' });
+  res.json(country.sectors.trade || {});
 });
